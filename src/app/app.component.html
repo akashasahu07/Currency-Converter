@@ -2,14 +2,20 @@
   <div class="currency">
     <div class="from">
       <h3>From</h3>
-      <select name="" id="">
-        <option value="">Select</option>
-        <option value="">Select</option>
-        <option value="">Select</option>
+      <select (input)="onFromCurrency($event)">
+        <option *ngFor="let i of currencies">{{ i }}</option>
       </select>
+      <input type="number" id="inp" (input)="fromValue($event)">
     </div>
+    
+    <button (click)="Calculate()">Calculate</button>
+
     <div class="to">
       <h3>To</h3>
+      <select (input)="onToCurrency($event)">
+        <option *ngFor="let i of currencies">{{ i }}</option>
+      </select>
+      <input type="number">
     </div>
   </div>
 </div>
