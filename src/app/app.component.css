@@ -88,8 +88,8 @@ input[type="number"] {
 select:focus,
 input[type="number"]:focus,
 .actions button:focus {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
 }
 
 .container.dark-mode select,
@@ -102,7 +102,7 @@ input[type="number"]:focus,
 .container.dark-mode select:focus,
 .container.dark-mode input[type="number"]:focus,
 .container.dark-mode .actions button:focus {
-  outline-color: #60a5fa;
+    outline-color: #60a5fa;
 }
 
 /* Button styling */
@@ -185,90 +185,93 @@ input[type="number"]:focus,
 /* Base responsive adjustments */
 @media (max-width: 768px) {
     .container {
-      max-width: 95%;
-      padding: 1.5rem;
-      margin: 3.5rem auto 1rem auto; /* Increased top margin to prevent overlap */
-      gap: 1rem;
+        max-width: 95%;
+        padding: 1.5rem;
+        margin: 3.5rem auto 1rem auto;
+        /* Increased top margin to prevent overlap */
+        gap: 1rem;
     }
-    
+
     .container h1 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-    
+
     .currency-converter-form {
-      gap: 1rem;
+        gap: 1rem;
     }
-    
+
     /* Keep theme toggle in the same position */
     .theme-toggle {
-      top: 1rem;
-      right: 1rem;
-      font-size: 1.5rem;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
     }
-  }
-  
-  /* Small mobile screens */
-  @media (max-width: 480px) {
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
     .container {
-      padding: 1rem;
-      border-radius: 8px;
-      gap: 0.8rem;
-      margin: 3.5rem auto 1rem auto; /* Maintain same top margin */
+        padding: 1rem;
+        border-radius: 8px;
+        gap: 0.8rem;
+        margin: 3.5rem auto 1rem auto;
+        /* Maintain same top margin */
     }
-    
+
     .container h1 {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-    
+
     select,
     input[type="number"] {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.95rem;
     }
-    
+
     .form-section {
-      gap: 0.3rem;
+        gap: 0.3rem;
     }
-    
+
     label {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-    
+
     .actions button {
-      padding: 0.5rem 1rem;
-      font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
     }
-    
+
     .summary {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-    
+
     .rate-info {
-      font-size: 0.85rem;
+        font-size: 0.85rem;
     }
-  }
-  
-  /* For very small screens */
-  @media (max-width: 320px) {
+}
+
+/* For very small screens */
+@media (max-width: 320px) {
     .container {
-      padding: 0.8rem;
-      gap: 0.6rem;
-      max-width: 98%;
-      margin-top: 3.5rem; /* Maintain consistent top margin */
+        padding: 0.8rem;
+        gap: 0.6rem;
+        max-width: 98%;
+        margin-top: 3.5rem;
+        /* Maintain consistent top margin */
     }
-    
+
     .container h1 {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
     }
-    
+
     select,
     input[type="number"] {
-      padding: 0.3rem 0.6rem;
-      font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
     }
-    
+
     .actions button {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
     }
-  }
+}
